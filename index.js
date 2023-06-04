@@ -1,6 +1,11 @@
 #! /usr/bin/env node
 /* eslint-disable no-unused-vars */
 
+	//todo: concurrency
+	//todo: console output
+	//todo: results
+	//todo: error handling
+
 import esMain from "es-main";
 import * as dotenv from "dotenv";
 import { Storage } from "@google-cloud/storage";
@@ -77,7 +82,7 @@ async function main(config) {
 
 	const results = [];
 
-	//todo: concurrency
+
 	for (const sourceFile of sourceFiles) {
 		const file = await downloadFile(source_storage, source_bucket, sourceFile);
 		const destFile = await uploadFile(dest_storage, dest_bucket, file);
@@ -125,7 +130,7 @@ if (esMain(import.meta)) {
 	const params = cli();
 
 	main(params)
-		.then(() => {
+		.then((results) => {
 			//noop
 		})
 		.catch((e) => {
