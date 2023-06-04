@@ -1,7 +1,7 @@
 {
 	"name": "gcs-to-gcs",
-	"version": "1.0.0",
-	"description": "that is cool!",
+	"version": "1.0.1",
+	"description": "move files from one bucket to another",
 	"main": "index.js",
 	"type": "module",
 	"types": "index.d.ts",

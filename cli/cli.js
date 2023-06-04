@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import yargs from "yargs";
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
@@ -72,10 +73,11 @@ DOCS: https://github.com/ak--47/`
 export default cli;
 
 const hero = String.raw`
-COOL!
+𝕘𝕔𝕤 𝕥𝕠 𝕘𝕔𝕤
+
+¯\_( ͡❛ ͜ʖ ͡❛)_/¯
 `;
 
-const banner = `... tagline! (v${VERSION})
-\tby AK (ak@mixpanel.com)\n\n`;
+const banner = `... a great mover of files! (v${VERSION})\tby AK (ak@mixpanel.com)\n\n`;
 
 const welcome = hero.concat("\n").concat(banner);
