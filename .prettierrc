@@ -4,5 +4,6 @@
 	"singleQuote": false,
 	"bracketSpacing": true,
 	"useTabs": true,
-	"endOfLine": "auto"
+	"endOfLine": "auto",
+	"printWidth": 150
 }

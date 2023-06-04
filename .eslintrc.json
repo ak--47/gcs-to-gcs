@@ -17,7 +17,7 @@
 		"sourceType": "module"
 	},
 	"rules": {
-		"prettier/prettier": [2, { "useTabs": true }]
-	},
+
+	}
 
 }

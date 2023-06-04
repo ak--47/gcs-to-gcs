@@ -4,7 +4,8 @@ interface Params {
 	source_path: string;
 	dest_path: string;
 	concurrency?: number;
-	filter?: string;	
+	filter?: string;
+	verbose?: boolean;	
 }
 
 interface AnyProps {

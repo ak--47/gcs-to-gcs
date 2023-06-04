@@ -38,24 +38,29 @@ DOCS: https://github.com/ak--47/`
 			demandOption: true,
 			describe: "the gcs:// path to the source files",
 			type: "string",
-
 		})
 		.option("dest_path", {
 			demandOption: true,
 			describe: "the gcs:// bucket to put the files in",
-			type: "boolean",
+			type: "string",
 		})
 		.option("concurrency", {
 			demandOption: false,
 			describe: "number of concurrent downloads + uploads",
 			type: "number",
-			default: 5,
+			default: 10,
 		})
 		.option("filter", {
 			demandOption: false,
 			describe: "a string to filter the files by",
 			type: "string",
 			default: "",
+		})
+		.option("verbose", {
+			demandOption: false,
+			describe: "show console messages",
+			type: "boolean",
+			default: true,
 		})
 
 		.help().argv;
