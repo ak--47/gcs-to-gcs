@@ -1,0 +1,44 @@
+{
+    "jest.jestCommandLine": "npm run test --",
+    "jest.autoRun": "off",
+    "files.exclude": {
+        "**/node_modules": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.implementationsCodeLens.enabled": true,
+    "cSpell.words": [
+        "accum",
+        "backoff",
+        "creds",
+        "DDTHH",
+        "doto",
+        "Fastify",
+        "gunzipped",
+        "imax",
+        "jmax",
+        "jshor",
+        "moar",
+        "ndjson",
+        "nnpx",
+        "nocheck",
+        "NUMEVENTS",
+        "papaparse",
+        "peopleexport",
+        "RETL",
+        "SINCEDAYS",
+        "tldr",
+        "ungzip",
+        "yanbp",
+        "YYYYMMDDTHH"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "cSpell.ignorePaths": ["**/**.json"],
+    "eslint.format.enable": true,
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.enable": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	}
+}

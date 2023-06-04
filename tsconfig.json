@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"noEmit": true,
+		"allowJs": true,
+		"checkJs": true,
+		"module": "NodeNext",
+		"resolveJsonModule": true
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
