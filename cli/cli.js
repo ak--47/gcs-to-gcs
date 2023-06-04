@@ -18,28 +18,44 @@ function cli() {
 			`${welcome}\n\nusage:\nnpx ${NAME} --yes [file or folder] [options]
 
 examples:
-npx  --yes  ${NAME} 
-npx  --yes  ${NAME} 
+npx  --yes  ${NAME} --source_keyfile myCreds.json --dest_keyfile myCreds.json --source_path gs://my-bucket/my-folder --dest_path gs://my-other-bucket --concurrency 5 --filter .json.gz
 
 DOCS: https://github.com/ak--47/`
 		)
-		.option("foo", {
-			demandOption: true,
-			describe: "baz",
+		.option("source_keyfile", {
+			demandOption: false,
+			describe: "the service account for the source bucket",
 			type: "string",
-			default: "foo",
+			default: "",
 		})
-		.option("bar", {
-			demandOption: true,
-			describe: "baz",
-			type: "number",
-			default: 42,
+		.option("dest_keyfile", {
+			demandOption: false,
+			describe: "the service account for the destination bucket",
+			type: "string",
+			default: "",
 		})
-		.option("baz", {
+		.option("source_path", {
 			demandOption: true,
-			describe: "baz",
+			describe: "the gcs:// path to the source files",
+			type: "string",
+
+		})
+		.option("dest_path", {
+			demandOption: true,
+			describe: "the gcs:// bucket to put the files in",
 			type: "boolean",
-			default: false,
+		})
+		.option("concurrency", {
+			demandOption: false,
+			describe: "number of concurrent downloads + uploads",
+			type: "number",
+			default: 5,
+		})
+		.option("filter", {
+			demandOption: false,
+			describe: "a string to filter the files by",
+			type: "string",
+			default: "",
 		})
 
 		.help().argv;

@@ -1,7 +1,10 @@
 interface Params {
-	foo: string;
-	bar: number;
-	baz: boolean;
+	source_keyfile?: string;
+	dest_keyfile?: string;
+	source_path: string;
+	dest_path: string;
+	concurrency?: number;
+	filter?: string;	
 }
 
 interface AnyProps {
